@@ -1,0 +1,209 @@
+body{
+    background:#fff;
+    /* overflow: hidden; */
+    /* font-family:华文仿宋; */
+    background: url(../img/wrap-bg-repeat-x.png) #f1f1f1 repeat-x;
+}
+.header{
+    background: url(../img/header-bg-repeat-x.png) repeat-x;
+    z-index: 1;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* height: 200px;
+    background: url(../img/header-bg-repeat-x.png) repeat-x; */
+}
+.hcenter{
+    position: relative;
+    width: 600px;
+    height: 136px;
+    background: url(../img/header-bg-repeat-x.png) repeat-x;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 3;
+}
+.logo{
+    left: -120px;
+    position: absolute;
+    z-index: 0;
+    /* position: absolute;
+    z-index: 2;
+    left: 15%;
+    top: 10px;
+    display: block;
+    width: 348px;
+    height: 331px;
+    margin-left: -210px;
+    background: url(../img/logo.png); */
+}
+.header .logo a {
+    display: block;
+    width: 211px;
+    height: 120px;
+    background: url(../img/logo.png) no-repeat 0 0;
+    text-indent: -20000px;
+}
+a{
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    outline: 0;
+}
+.header .top {
+    height: 79px;
+    margin-left: 100px;
+    z-index: 2;
+    position: relative;
+}
+.header .nav{
+    padding-top: 29px;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header .nav li{
+    margin-right: 20px;
+    display: inline;
+    float: left;
+}
+.header .nav li a {
+    color: #ccc;
+    height: 50px;
+    padding: 30px 10px 10px 20px;
+}
+.header .nav li a {
+    font-family: "Microsoft Yahei";
+    float: left;
+    display: inline;
+}
+.left{
+    width: 300px;
+    height: 1000px;
+    float: left;
+    /* background-color: aquamarine; */
+}
+.center{
+    width: 800px;
+    height: 900px;
+    margin: 0 auto;
+    background: url(../img/wrap-bg-repeat-x.png) #f1f1f1 repeat-x;
+    margin-top: -1px;
+    position: relative;
+}
+.center-up{
+    width: 800px;
+    height: 100px;
+    /* background-color: blue; */
+}
+.page-title{
+    font-size: 26px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    text-align: center;
+}
+.hd {
+    padding-left: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d4d4d4;
+}
+.hd h2 {
+    height: 26px;
+    line-height: 26px;
+    font-size: 16px;
+    padding-right: 40px;
+}
+/* .hd img {
+    float: left;
+    display: inline;
+    width: 23px;
+    height: 32px;
+} */
+.hd .go-bottom {
+    float: right;
+    background-image: url(../img/go-bottom.png);
+    background-size: 75px 25px;
+    width: 75px;
+    height: 25px;
+    background-repeat: no-repeat;
+    display: block;
+    cursor: pointer;
+}
+.center-down{
+    width: 800px;
+    height:800px;
+    padding-top: 0!important;
+    padding-right: 0!important;
+    width: 100%;
+    position: relative;
+    zoom: 1;
+    /* background-color: brown; */
+}
+.vip_user_box{
+    -webkit-tap-highlight-color: transparent;
+    color: #333;
+    font-family: 'Microsoft YaHei',SimSun,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    position: absolute;
+    width: 760px;
+    height: 450px;
+    padding: 60px 15px 0 15px;
+    transition: all 2s ease 0s;
+    top: 0%;
+    left: 20px;
+    animation: bounceInLeft linear 2s;
+}
+.vip_user_box .photo_box{
+-webkit-tap-highlight-color: transparent;
+color: #333;
+font-family: 'Microsoft YaHei',SimSun,Arial,Helvetica,sans-serif;
+font-size: 12px;
+line-height: normal;
+position: relative;
+width: 120px;
+height: 120px;
+margin: 0 auto;
+}
+.vip_user_box .photo_box .photo_mask {
+position: absolute;
+z-index: 2;
+top: 0;
+left: 0;
+width: 120px;
+height: 120px;
+}
+.vip_user_box h3 {
+font-size: 22px;
+font-weight: 400;
+line-height: 40px;
+overflow: hidden;
+overflow: hidden;
+height: 40px;
+padding: 0 10px;
+padding-top: 15px;
+text-align: center;
+color: #666;
+}
+.vip_user_info {font-size: 18px;padding: 5px 15px 0 40px;float: left;}
+ul {
+/* list-style: none; */
+}
+.vip_user_info li {
+line-height: 25px;
+height: 50px;
+color: #960;
+}
+.vip_user_info li a {
+color: #2291f5;
+}
+a, a:link {
+text-decoration: none;
+color: #333;
+}
+.vip_user_info li img {
+position: relative;
+top: -2px;
+vertical-align: middle;
+border: 0;
+}

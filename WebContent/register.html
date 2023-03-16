@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/change1.css" />
+<!--     <script src="change.js"></script> -->
+ <!-- 表单验证 -->
+	<script type="text/javascript">
+		function isValid(form){
+			if(form.username.value==""){
+				alert("用户名不能为空！");
+				return false;
+			}
+			if(form.password.value!=form.repassword.value){
+				alert("两次输入的密码不同！");
+				return false;
+			}
+			if(form.password.value==""){
+				alert("密码不能为空！");
+				return false;
+			}
+			if(form.repassword.value==""){
+				alert("请再次输入密码！");
+				return false;
+			}
+			return true;
+		}
+	</script>
+</head>
+<body>
+    <div class="header">
+        <a href="测试.html" class="logo"></a>
+    </div>
+<div class="control">
+    <div class="content">
+        <form action="register.jsp" name="register" method="post" onSubmit="return isValid(this);">
+        <div style="display: block;">
+            <p>用户名</p>
+            <input type="text" placeholder="username" name="username"/>
+            <p>密码</p>
+            <input type="password" placeholder="password" name="password"/>
+            <p>确认密码</p>
+            <input type="password" placeholder="password" name="repassword"/>
+            <br/>
+            <input type="submit" value="注册"/>
+        </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

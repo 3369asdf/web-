@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>充值</title>
+</head>
+<!-- <link rel="stylesheet" href="bootstrap.css"> -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="img.heiyanimg.com/_res/css/mobile.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/chongzhi.css" />
+<body class="index">
+    <div class="header">
+        <a href="测试.html" class="logo"><img src="img.heiyanimg.com/_assets/m-logo.png" height="59" width="67" alt="黑岩" /></a>
+        <div class="top">
+            <div class="nav">
+                <a href="index.jsp">首页</a>
+                <a href="lanmu.html">书库</a>
+                <a href="lanmu.html">全本</a>
+                <a href="chongzhi.html">充值</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h3>购买书豆</h3>
+        <div class="panal">
+            <div class="row">
+                <div class="col-xs-5 greenbr" onclick="get(0)" style="background-color:#0a0;color:#fff">
+                    <strong>10书豆</strong>
+                    <br> 售价：10.00元
+                    <br> 10
+                </div>
+                <div class="col-xs-offset-2 col-xs-5 greenbr" onclick="get(1)">
+                    <strong>30书豆</strong>
+                    <br> 售价：30.00元
+                    <br> 30
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5 greenbr" onclick="get(2)">
+                    <strong>50书豆</strong>
+                    <br> 售价：50.00元
+                    <br> 50
+                </div>
+                <div class="col-xs-offset-2 col-xs-5 greenbr" onclick="get(3)">
+                    <strong>100书豆</strong>
+                    <br> 售价：100.00元
+                    <br> 100
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5 greenbr" onclick="get(4)">
+                    <strong>300书豆</strong>
+                    <br> 售价：300.00元
+                    <br> 300
+                </div>
+                <div class="col-xs-offset-2 col-xs-5 greenbr" onclick="get(5)">
+                    <strong>500书豆</strong>
+                    <br> 售价：500.00元
+                    <br> 500
+                </div>
+            </div>
+        </div>
+        <hr>
+        <form class="form panal" method="get">
+            <div class="chongzhi">
+                <label for="uid">ID:&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" style="width: 95%;" id="uid" name="uid" placeholder="输入要充值的ID">
+            </div>
+
+            <div class="chongzhi">
+                <label for="count">金额:</label>
+                <input type="text" style="width: 95%;" id="count" name="count" readonly value="10">
+            </div>
+
+            <div class="chongzhi">
+                <button type="submit" class="btn btn-success fit">购买</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    function getByClass(parent, cls) {
+        if (parent.getElementsByClassName) {
+            return parent.getElementsByClassName(cls);
+        } else {
+            var res = [];
+            var reg = new RegExp(' ' + cls + ' ', 'i')
+            var ele = parent.getElementsByTagName('*');
+            for (var i = 0; i < ele.length; i++) {
+                if (reg.test(' ' + ele[i].className + ' ')) {
+                    res.push(ele[i]);
+                }
+            }
+            return res;
+        }
+    }
+
+    function get(index) {
+        var choose = getByClass(document, 'greenbr');
+        for (let i = 0; i < choose.length; i++) {            
+            choose[i].style.backgroundColor = "#fff";
+            choose[i].style.color = "#0a0";
+        }
+        choose[index].style.backgroundColor = "#0a0";
+        choose[index].style.color = "#fff";
+
+        var count = document.getElementById("count");
+        if(index == 1) { money = 30; } else
+        if(index == 2) { money = 50; } else
+        if(index == 3) { money = 100; } else
+        if(index == 4) { money = 300; } else
+        if(index == 5) { money = 500; } else
+        { money = 10; }
+        count.value = money;
+    }    
+</script>
+</html>

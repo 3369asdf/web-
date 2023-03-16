@@ -1,0 +1,48 @@
+.content {
+    margin-top: 30px;
+}
+
+.content h3{
+    color:black;
+    text-align: center;
+}
+.greenbg {
+    width: 100%;
+    background-color: #0f0;
+}
+
+.greenbr {
+    text-align: center;
+    border: solid;
+    border-radius: 8px;
+    border-color: #0a0;
+    color: #0a0;
+}
+
+.submit {
+    height: 45px;
+}
+
+.fit {
+    width: 100%;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+.panal {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.box {
+    margin-bottom: 20x;
+}
+.chongzhi{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 40px;
+}

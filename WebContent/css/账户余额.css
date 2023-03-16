@@ -1,0 +1,217 @@
+body{
+    background:#fff;
+    /* overflow: hidden; */
+    /* font-family:华文仿宋; */
+    background: url(../img/wrap-bg-repeat-x.png) #f1f1f1 repeat-x;
+}
+.header{
+    background: url(../img/header-bg-repeat-x.png) repeat-x;
+    z-index: 1;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* height: 200px;
+    background: url(../img/header-bg-repeat-x.png) repeat-x; */
+}
+.hcenter{
+    position: relative;
+    width: 600px;
+    height: 136px;
+    background: url(../img/header-bg-repeat-x.png) repeat-x;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 3;
+}
+.logo{
+    left: -120px;
+    position: absolute;
+    z-index: 0;
+    /* position: absolute;
+    z-index: 2;
+    left: 15%;
+    top: 10px;
+    display: block;
+    width: 348px;
+    height: 331px;
+    margin-left: -210px;
+    background: url(../img/logo.png); */
+}
+.header .logo a {
+    display: block;
+    width: 211px;
+    height: 120px;
+    background: url(../img/logo.png) no-repeat 0 0;
+    text-indent: -20000px;
+}
+a{
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    outline: 0;
+}
+.header .top {
+    height: 79px;
+    margin-left: 100px;
+    z-index: 2;
+    position: relative;
+}
+.header .nav{
+    padding-top: 29px;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header .nav li{
+    margin-right: 20px;
+    display: inline;
+    float: left;
+}
+.header .nav li a {
+    color: #ccc;
+    height: 50px;
+    padding: 30px 10px 10px 20px;
+}
+.header .nav li a {
+    font-family: "Microsoft Yahei";
+    float: left;
+    display: inline;
+}
+.left{
+    width: 300px;
+    height: px;
+    float: left;
+    /* background-color: aquamarine; */
+}
+.center{
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    background: url(../img/wrap-bg-repeat-x.png) #f1f1f1 repeat-x;
+    margin-top: -1px;
+    position: relative;
+}
+.center-up{
+    width: 800px;
+    height: 100px;
+    /* background-color: blue; */
+}
+.page-title{
+    font-size: 26px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    text-align: center;
+}
+.center-down{
+    width: 800px;
+    height:400px;
+    padding-top: 0!important;
+    padding-right: 0!important;
+    width: 100%;
+    position: relative;
+    zoom: 1;
+    /* background-color: brown; */
+}
+.fill-block{
+    width: 108%;
+    overflow: hidden;
+    padding-top: 10px;
+    list-style: none;
+}
+.list{
+    float: left;
+    display: inline;
+    width: 340px;
+    margin-right: 30px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+}
+.center .page-title-split {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.center .page-title {
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    padding-top: 11px;
+}
+.my-pocket {
+    line-height: 1.6em;
+    margin-bottom: 30px!important;
+    line-height: 2em;
+    color: #960;
+    font-size: 16px;
+}
+.mod .bd{
+    position: relative;
+    margin-left: 20px;
+    zoom: 1;
+}
+.label-warning {
+    background-color: #f89406;
+}
+.badge, .label {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 11.84px;
+    font-weight: 700;
+    line-height: 14px;
+    color: #fff;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+}
+.fr {
+    float: right;
+}
+.inner {
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+.space-20 {
+    font-size: 0;
+    padding-top: 5px;
+}
+.choose-payway {
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+.column-2 {
+    zoom: 1;
+}
+.column-2 .left {
+    /* float: left; */
+    width: 300px;
+    text-align: center;
+}
+
+.choose-payway .left ul{
+margin: 0px;
+padding: 0px;
+}
+.choose-payway .left li {
+    padding: 5px 10px;
+    color: #6f6f6f;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1.6em;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background: #f0f0f0;
+    width: 120px;
+    list-style: none;
+    float: left;
+}
+.choose-payway .coin-exchange {
+    color: #F0853E;
+}
+.button1{
+    float: right;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background: #fa6400;
+}
